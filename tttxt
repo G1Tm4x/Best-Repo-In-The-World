@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title> </title>
+    <meta charset="UTF-8"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
+    <meta name="theme-color" content="#000000" />
+    <meta name="navigation-bar-button-color" content="#ff0000" />
+    <meta name="navigation-bar-button-border-color" content="#ff0000" />
+    <meta name="navigation-bar-button-background-color" content="#000000" />
+    <meta name="navigation-bar-button-hasshadow" content="false" />
+    <meta name="navigation-bar-button-shadow-color" content="#000000" />
+    <meta name="hide-navigation-bar" content="false" />
+    <style>
+      body{
+        background-color:silver;
+       
+      }
+      #time{
+          font-size: 100px;
+          position:sticky;
+          left:0;
+          top:0;
+          bottom:0;
+          right:0;
+          width:100%;
+     
+      }
+      #content{
+          position:absolute;
+          left:0;
+          top:0;
+          bottom:0;
+          right:0;
+          margin:0;
+          
+      }
+      @media only screen and (max-width: 1200px) {
+
+            #time {
+                font-size: 120px;
+            }
+      }
+    </style>
+</head>
+<body>
+    <header></header>
+<!--    <nav>
+        <ul>
+            <li><a href='#'>Navigation 1</a></li>
+            <li><a href='#'>Navigation 2</a></li>
+            <li><a href='#'>Navigation 3</a></li>
+        </ul>
+    </nav>-->
+    <section id="content">
+        <article>
+
+<p id="time" style="font-weight:bolder;color:grey;text-shadow:wheat 1px 2px 25px;text-align:center;">Time</p>
+<script>
+var gt= document.getElementById("time");
+
+setInterval(function(){
+
+gt.innerText=new Date().toLocaleTimeString();
+
+if(gt.style.color=="yellow"){
+gt.style.color="blue"
+gt.style.textShadow = "orange 1px 2px 25px";
+}
+
+else if(gt.style.color=="blue"){
+gt.style.color="red";
+gt.style.textShadow= "green 1px 2px 25px";
+}
+
+else if(gt.style.color=="red"){
+gt.style.color="red";
+gt.style.textShadow = "blue 1px 2px 25px";
+}
+
+},122)
+
+w
+</script>
+
+</article> 
+    </section>
+
+    <footer></footer>
+</body>
+</html>
